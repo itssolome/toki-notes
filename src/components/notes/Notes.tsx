@@ -11,11 +11,10 @@ type NotesProps = {
 
 export const Notes = ({ theme, notes, onEdit, onDelete }: NotesProps) => {
   return (
-    // <div className="bg-blue-950 h-full w-full">
     <div className="flex h-full w-full flex-col items-center">
       <NotestHeader theme={theme} />
       <div className="h-full min-h-0 w-full flex-1 content-center items-center">
-        <div className="m-auto flex h-[95%] min-h-0 w-[50%] flex-wrap content-start items-center justify-center gap-2 overflow-y-scroll pt-2 pb-4">
+        <div className="m-auto flex h-[95%] min-h-0 w-[90%] flex-wrap content-start items-center justify-center gap-2 overflow-y-scroll pt-2 pb-4">
           {notes.length === 0 ? (
             <p>No Notes yet. Add one!</p>
           ) : (
